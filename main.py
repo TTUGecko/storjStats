@@ -2,8 +2,14 @@ import pandas as pd
 import os
 
 
-logPath = "/home/jeff/recdb/python/Storj/StorjLogs"
-timezone = 'America/Chicago'
+logPath = "***Replace with the fully qualified path to Storj Logs***"
+timezone = "***Replace with local timezone***"
+'''
+Sample Acceptable Timezones example:
+'America/Chicago'
+See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for a full listing of acceptable timezones.
+Accepts timezones from the Olson timezone database
+'''
 
 #Build a list of the Nodes found in Log Folder
 nodes = set([x[:x.find('_')] for x in os.listdir(logPath) if '.log' in x])
