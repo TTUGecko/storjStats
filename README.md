@@ -2,12 +2,12 @@
 A work in progress for analyzing Storj log files in python.
 
 # dependencies
-storjStats is intended to function with Python3.5, but may also work with previous version.
+storjStats is intended to function with Python3.5, but it may also work with previous version.
 
 Numpy and Pandas are required to run the scripts in storjStats.
 
 # Setup
-After installing the dependencies, download a clone of the project, and it can be run one of two ways.
+After installing the dependencies, download a clone of the project.  Edit the main.py file to include your qualified path to the storj log files, and also your timezone.  Once ready storjStats can be run one of two ways.
 1. Manually run the main.py script with in a linux shell
 2. Set up a chron job to run the main.py at a desired interval (avoid around midnight to 2am as this is when the reaper runs)
 
